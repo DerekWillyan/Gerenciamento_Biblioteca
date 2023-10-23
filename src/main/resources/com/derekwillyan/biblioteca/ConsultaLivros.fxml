@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="739.0" prefWidth="1556.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.derekwillyan.biblioteca.Controllers.ConsultarLivroController">
+   <children>
+      <GridPane prefHeight="739.0" prefWidth="1556.0">
+        <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="50.0" minWidth="10.0" percentWidth="0.0" prefWidth="50.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="50.0" minWidth="0.0" percentWidth="0.0" prefWidth="50.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="152.0" minHeight="10.0" prefHeight="66.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="565.0" minHeight="10.0" prefHeight="565.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="231.0" minHeight="0.0" prefHeight="22.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Livros" GridPane.columnIndex="1">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <GridPane prefHeight="353.0" prefWidth="500.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="528.0" minHeight="10.0" prefHeight="519.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="282.0" minHeight="10.0" prefHeight="46.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane prefHeight="319.0" prefWidth="1456.0" GridPane.rowIndex="1">
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <columnConstraints>
+                        <ColumnConstraints />
+                     </columnConstraints>
+                     <children>
+                        <Button fx:id="voltar" maxHeight="30.0" mnemonicParsing="false" onAction="#onbtnVoltar" prefHeight="30.0" prefWidth="1631.0" text="Voltar" />
+                     </children>
+                  </GridPane>
+                  <TableView fx:id="table" prefHeight="267.0" prefWidth="445.0">
+                    <columns>
+                        <TableColumn fx:id="isbn" prefWidth="169.0" text="ISBN" />
+                      <TableColumn fx:id="livro" prefWidth="229.0" text="Livro" />
+                      <TableColumn fx:id="autor" minWidth="3.0" prefWidth="205.0" text="Autor" />
+                        <TableColumn fx:id="anoPubli" prefWidth="184.0" text="Ano da Publicação" />
+                        <TableColumn fx:id="editora" prefWidth="273.0" text="Editora" />
+                        <TableColumn fx:id="categoria" prefWidth="200.0" text="Categoria" />
+                        <TableColumn fx:id="quantidade" prefWidth="196.0" text="Quantidade Disponível" />
+                    </columns>
+                  </TableView>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

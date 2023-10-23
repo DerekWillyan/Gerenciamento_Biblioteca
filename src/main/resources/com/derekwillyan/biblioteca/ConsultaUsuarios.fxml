@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.derekwillyan.biblioteca.Controllers.ConsultarUsuariosController">
+   <children>
+      <GridPane prefHeight="541.0" prefWidth="845.0">
+        <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="50.0" minWidth="10.0" percentWidth="0.0" prefWidth="50.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="50.0" minWidth="0.0" percentWidth="0.0" prefWidth="50.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="152.0" minHeight="10.0" prefHeight="66.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="346.0" minHeight="10.0" prefHeight="302.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="127.0" minHeight="0.0" prefHeight="28.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Usuários" GridPane.columnIndex="1">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Text>
+            <GridPane prefHeight="353.0" prefWidth="500.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="272.0" minHeight="10.0" prefHeight="240.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="190.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <GridPane prefHeight="18.0" prefWidth="500.0" GridPane.rowIndex="1">
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <columnConstraints>
+                        <ColumnConstraints />
+                     </columnConstraints>
+                     <children>
+                        <Button fx:id="voltar" maxHeight="30.0" mnemonicParsing="false" onAction="#onbtnVoltar" prefHeight="30.0" prefWidth="892.0" text="Voltar" />
+                     </children>
+                  </GridPane>
+                  <TableView fx:id="table" prefHeight="267.0" prefWidth="445.0">
+                    <columns>
+                      <TableColumn fx:id="nome" prefWidth="259.0" text="Nome" />
+                      <TableColumn fx:id="cpf" minWidth="3.0" prefWidth="168.0" text="CPF" />
+                        <TableColumn fx:id="nascimento" minWidth="0.0" prefWidth="143.0" text="Nascimento" />
+                        <TableColumn fx:id="telefone" prefWidth="174.0" text="Telefone" />
+                    </columns>
+                  </TableView>
+               </children>
+            </GridPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

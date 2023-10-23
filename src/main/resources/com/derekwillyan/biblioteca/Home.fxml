@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="526.0" prefWidth="885.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.derekwillyan.biblioteca.Controllers.HomeController">
+   <children>
+      <GridPane alignment="CENTER" prefHeight="526.0" prefWidth="885.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="214.0" minHeight="10.0" prefHeight="93.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="283.0" minHeight="10.0" prefHeight="265.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="139.0" minHeight="10.0" prefHeight="42.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <GridPane GridPane.rowIndex="1">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Button fx:id="emprestimo" mnemonicParsing="false" onAction="#onbtnEmprestimo" prefHeight="40.0" prefWidth="312.0" text="Novo Emprestimo" />
+                  <Button fx:id="user" mnemonicParsing="false" onAction="#onbtnUsuario" prefHeight="40.0" prefWidth="312.0" text="Novo Usuário" GridPane.rowIndex="2" />
+                  <Button fx:id="editora" mnemonicParsing="false" onAction="#onbtnEditora" prefHeight="40.0" prefWidth="312.0" text="Nova Editora" GridPane.rowIndex="4" />
+                  <Button fx:id="funcionario" mnemonicParsing="false" onAction="#onbtnFuncionario" prefHeight="40.0" prefWidth="312.0" text="Novo Funcionário" GridPane.rowIndex="5" />
+                  <Button fx:id="user1" mnemonicParsing="false" onAction="#onbtnLivros" prefHeight="40.0" prefWidth="312.0" text="Adicionar Livro" GridPane.rowIndex="1" />
+                  <Button fx:id="autor" mnemonicParsing="false" onAction="#onbtnAutor" prefHeight="40.0" prefWidth="312.0" text="Novo Autor" GridPane.rowIndex="3" />
+                  <Button fx:id="consultarLivros" mnemonicParsing="false" onAction="#onbtnConsultarLivros" prefHeight="40.0" prefWidth="312.0" text="Consultar Livros" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button fx:id="consultarUsers" mnemonicParsing="false" onAction="#onbtnConsultarUsers" prefHeight="40.0" prefWidth="312.0" text="Consultar Usuários" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Button fx:id="consultarAutores" mnemonicParsing="false" onAction="#onbtnConsultarAutores" prefHeight="40.0" prefWidth="312.0" text="Consultar Autor" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Button fx:id="consultarEditoras" mnemonicParsing="false" onAction="#onbtnConsultarEditoras" prefHeight="40.0" prefWidth="312.0" text="Consultar Editora" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <Button fx:id="consultarFunc" mnemonicParsing="false" onAction="#onbtnConsultarFunc" prefHeight="40.0" prefWidth="312.0" text="Consultar Funcionários" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <Button fx:id="consultarEmprestimos" mnemonicParsing="false" onAction="#onbtnConsultarEmprestimos" prefHeight="40.0" prefWidth="312.0" text="Consultar Empréstimos" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Gerenciamento Biblioteca" textAlignment="CENTER" wrappingWidth="472.7294921875">
+               <font>
+                  <Font size="34.0" />
+               </font>
+            </Text>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>
